@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donation Dashboard</title>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="donar.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Donation Tracking Dashboard</h1>
+    <p class="subtitle">Simple dashboard with dummy data</p>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <div class="card">
+        <h3>Total donations received</h3>
+        <p id="total-amount">₹0</p>
+      </div>
+      <div class="card">
+        <h3>Number of donors</h3>
+        <p id="num-donors">0</p>
+      </div>
+      <div class="card">
+        <h3>Number of donations</h3>
+        <p id="num-donations">0</p>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>Donation trends (monthly)</h2>
+      <canvas id="trendChart" height="120"></canvas>
+    </section>
+
+    <section class="table-section">
+      <h2>Recent donations</h2>
+      <table id="donation-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Donor</th>
+            <th>Amount (₹)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filled by script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made for assignment • Dummy data only</small>
+  </footer>
+
+  <!-- Link to JS -->
+  <script src="donars.js"></script>
+</body>
+</html>
